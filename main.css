@@ -4,12 +4,13 @@
 
 body {
 	margin: auto;
-    max-width: 1000px;
     width: 100%;
     height: 100%;
-    font-family: 'Indie Flower', cursive;
+    font-family: "Indie Flower", cursive;
 	color: #2d3c49;
 }
+
+/* Header */
 
 .header {
 	box-shadow: 0 4px #7d97ad;
@@ -33,13 +34,7 @@ body {
 	text-align: right;
 }
 
-.title {
-	font-size: 2.5em;
-}
-
-.subTitle {
-	font-size: 2em;
-}
+/* Central image */
 
 .main_image {
 	margin: auto;
@@ -47,19 +42,13 @@ body {
 }
 
 .central_img {
-	max-width:100%;
-	max-height:100%;
+	width: 100%;
+	height: 100%;
 	display: block;
 	margin: auto;
 }
 
-.section_title {
-	width: 100%;
-}
-
-.section_h2 {
-	font-size: 1.6em;
-}
+/* Content */
 
 .content {
 	margin-bottom: 20px;
@@ -67,6 +56,10 @@ body {
 	display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.section_title {
+	width: 100%;
 }
 
 .portfolio_item {
@@ -77,12 +70,79 @@ body {
 .portfolio_image {
 	display: block;
 	margin: auto;
-	max-width: 100%;
+	width: 100%;
 }
 
-@media screen and (max-width: 780px) {
+/* responsive */
+
+@media screen and (max-width: 499px) {
 	body {
-		max-width: 720px;
+		width: 300px;
+	}
+
+	.logo {
+		width: 50px;
+		height: 50px;
+	}
+
+	.title {
+		font-size: 1.2em;
+	}
+
+	.subTitle {
+		font-size: 1em;
+	}
+
+	.section_title {
+		font-size: 1.2em;
+	}
+
+	.portfolio_item {
+		width: 100%;
+	}
+
+	.caption {
+		font-size: 1.1em;
+	}
+
+	.link {
+		font-size: 1.1em;
+	}
+}
+
+@media screen and (min-width: 500px) {
+	body {
+		width: 450px;
+	}
+
+	.title {
+		font-size: 1.4em;
+	}
+
+	.subTitle {
+		font-size: 1.2em;
+	}
+
+	.section_title {
+		font-size: 1.2em;
+	}
+
+	.portfolio_item {
+		width: 30%;
+	}
+
+	.caption {
+		font-size: 1.2em;
+	}
+
+	.link {
+		font-size: 1.1em;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	body {
+		width: 650px;
 	}
 
 	.logo {
@@ -98,7 +158,7 @@ body {
 		font-size: 1.5em;
 	}
 
-	.section_h2 {
+	.section_title {
 		font-size: 1.4em;
 	}
 
@@ -106,48 +166,42 @@ body {
 		width: 30%;
 	}
 
-	h3 {
-		font-size: 1.1em;
+	.caption {
+		font-size: 1.3em;
 	}
 
-	p {
-		font-size: 1.1em;
-	}
-}
-
-@media screen and (max-width: 560px) {
-	.title {
-		font-size: 1.4em;
-	}
-
-	.subTitle {
+	.link {
 		font-size: 1.2em;
 	}
-
-	.section_h2 {
-		font-size: 1.1em;
-	}
-
-	h3 {
-		font-size: 1em;
-	}
-
-	p {
-		font-size: 1em;
-	}
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 900px) {
 	body {
-		max-width: 300px;
+		width: 900px;
 	}
 
 	.logo {
-		width: 50px;
-		height: 50px;
+		width: 100px;
+		height: 100px;
 	}
 
-	.portfolio_item {
-		width: 100%;
+	.title {
+		font-size: 2.5em;
+	}
+
+	.subTitle {
+		font-size: 2em;
+	}
+
+	.section_title {
+		font-size: 1.6em;
+	}
+
+	.caption {
+		font-size: 1.4em;
+	}
+
+	.link {
+		font-size: 1.3em;
 	}
 }
